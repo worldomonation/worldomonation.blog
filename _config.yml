@@ -13,14 +13,14 @@ email: ''
 
 # Authors
 authors:
-  sal:
+  Edwin:
     name: Edwin
     display_name: Edwin
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    gravatar: 
     email: egao@outlook.com
-    web: 
+    web: https://edwintakahashi.com
     twitter: https://twitter.com/TakahashiEdwin
-    description: 
+    description: ''
 
 # Plugins
 plugins:
@@ -44,7 +44,7 @@ paginate: 6
 paginate_path: /page:num/
     
 # Other
-highlighter: none
+highlighter: rouge
 markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
