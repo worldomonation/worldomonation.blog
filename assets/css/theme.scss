@@ -4,8 +4,10 @@
 
 $brown: #B59F62;
 $teal: #40FFDC;
+$cyan: #17a2b8;
+$red: #dc3545;
 $black: #111;
-$primary: $teal;
+$primary: $cyan;
 $dark:    $black;
 $enable-rounded: false;
 
@@ -25,7 +27,7 @@ body {
     background: #f4f4f4;
 }
 a {
-    color: darken($primary, 24%);
+    color: darken($dark, 24%);
 }
 img {
     max-width:100%;
@@ -259,7 +261,7 @@ img, img:hover {
         font-size:22px;
         line-height:1.4;
         a { 
-            background-image: linear-gradient(180deg, transparent 89%, $primary 0);
+            background-image: linear-gradient(180deg, transparent 89%, $red 0);
             background-repeat: no-repeat;
             background-size: 0 100%;
             transition: background-size .6s ease;
@@ -424,7 +426,7 @@ img, img:hover {
         width:50px;
         border-radius:50%;
         margin-right:10px;
-        border:2px solid darken($primary,20%);
+        border:2px solid darken(#8E9AA7,20%);
         padding:2px;
     }
 }
