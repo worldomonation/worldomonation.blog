@@ -30,6 +30,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-figure
+  - jekyll-analytics
+
+# Google Analytics
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-179310709-1
+    anonymizeIp: false
     
 # Archives
 jekyll-archives:
