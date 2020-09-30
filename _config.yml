@@ -1,9 +1,9 @@
 # Site
 name: "Edwin Takahashi"
 title: "Edwin Takahashi"
-description: ""
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+description: "Photos, code and other musings."
+logo: ''
+favicon: ''
 google_analytics: ''
 disqus: ''
 mailchimp-list: ''
