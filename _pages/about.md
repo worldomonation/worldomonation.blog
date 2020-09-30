@@ -1,13 +1,19 @@
 ---
 layout: page
-title: Memoirs, a free minimalist Jekyll blogging theme with modern design 
+title: About me
 permalink: /about
 comments: false
-image: assets/images/screenshot.jpg
-imageshadow: true
+image: 
+imageshadow: false
 ---
 
-This website is a demonstration to see **Memoirs Jekyll theme** in action. The theme is compatible with Github pages, in fact even this demo itself is created with Github Pages and hosted with Github. 
+I am a thirty-something person of Japanese descent that calls the beautiful region of Vancouver, Canada as home.
 
-<a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/jekyll-theme-memoirs/" class="btn btn-dark"> Get Memoirs for Jekyll &rarr;</a>
+### Elsewhere on the web
 
+<a target="_blank" href="https://www.instagram.com/cyka_privet/" class="btn btn-outline-dark"> Instagram &rarr;</a>
+<p>
+<a target="_blank" href="https://www.linkedin.com/in/etakahashi/" class="btn btn-outline-dark"> LinkedIn &rarr;</a>
+<p>
+<a target="_blank" href="https://twitter.com/TakahashiEdwin" class="btn btn-outline-dark"> Twitter &rarr;</a>
+<p>
