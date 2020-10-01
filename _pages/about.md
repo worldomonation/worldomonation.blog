@@ -17,3 +17,5 @@ I am a thirty-something person of Japanese descent that calls the beautiful regi
 <p>
 <a target="_blank" href="https://twitter.com/TakahashiEdwin" class="btn btn-outline-dark"> Twitter &rarr;</a>
 <p>
+<a target="_blank" href="https://github.com/worldomonation" class="btn btn-outline-dark"> GitHub &rarr;</a>
+<p>

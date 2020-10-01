@@ -2,7 +2,7 @@
 layout: post
 title:  "Pike Street Market"
 author: Edwin
-categories: [ Photo, 35mm Film ]
+categories: [ 35mm Film ]
 tags: [ United States, Seattle, Kodak 5260 ]
 image: assets/images/photography/2020/IMG_0116.JPG
 ---
