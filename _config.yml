@@ -3,13 +3,13 @@ name: "Edwin Takahashi"
 title: "Edwin Takahashi"
 description: "Photos, code and other musings."
 logo: ''
-favicon: ''
-google_analytics: ''
+favicon: assets/images/site/favicon.png
+google_analytics: 'UA-179310709-1'
 disqus: ''
 mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
-email: ''
+email: 'egao@outlook.com'
 
 # Authors
 authors:
