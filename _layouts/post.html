@@ -44,7 +44,7 @@ post_class: post-template
     </div>
     <div class="card-footer text-muted">
         <!-- Build the EXIF string. -->
-        {{ page.image | exif: 'make' }} {{ page.image | exif: 'model' }} + {{ page.lens }} @ ISO {{ page.iso }}
+        {{ page.make }} {{ page.model }} + {{ page.lens }} @ ISO {{ page.iso }}
 
         <!-- If film is specified. -->
         {% if page.film %}
@@ -53,7 +53,7 @@ post_class: post-template
         {% endif %}
 
         <br>
-        Taken: {{ page.image | exif: 'date_time' | date: "%Y-%m-%d" }}
+        Taken: {{ page.capture_date }}
     </div>
 </div>
 
