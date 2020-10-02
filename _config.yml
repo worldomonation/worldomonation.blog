@@ -11,6 +11,7 @@ include: ["_pages"]
 permalink: /:title/
 email: 'egao@outlook.com'
 encoding: UTF-8
+baseurl: ''
 
 # Authors
 authors:
