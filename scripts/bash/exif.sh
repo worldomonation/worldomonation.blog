@@ -1,6 +1,10 @@
 # Variables for relative path, image path and post path.
 top_src_dir='../../'
-image_file=$top_src_dir$1
+if [[ $1 == *"../../"* ]]; then
+    image_file=$1
+else
+    image_file=$top_src_dir$1
+fi
 post=$top_src_dir'_posts/'$2
 
 if [ -z $image_file ]; then
@@ -42,8 +46,8 @@ for ((i = 0; i < ${#EXIF_VALUES[@]}; i++))
 do
     attr=$(echo "${EXIF_VALUES[$i]}" | xargs)
     tag="${EXIF[$i]}"
-    if grep -qF "$attr" $post; then
-        echo Not inserting "$tag":"$attr" as it exists already
+    if grep -qF "$tag" $post; then
+        echo Not inserting "$tag": "$attr" as it exists already
     else
         echo -e $tag: "$attr" >> $post
     fi
