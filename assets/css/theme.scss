@@ -111,7 +111,7 @@ img, img:hover {
 		transform: translateY(0%);
 	}
 }
-.featured-image, .firstpage .blog-grid-item:nth-child(1), .firstpage .blog-grid-item:nth-child(2), .firstpage .blog-grid-item:nth-child(3) {
+.featured-image, .firstpage .blog-grid-item {
     animation: fade-up 0.7s ease-out forwards running;
 }
 // menu
@@ -375,12 +375,19 @@ img, img:hover {
 }
 
 // blog 
-.article-post, .entry-header, .comments, .rating, .authorbox {
+.article-post, .comments, .rating, .authorbox {
     max-width: 740px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+.entry-header {
+    max-width: 740px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .posttitle {
     font-size:50px;
