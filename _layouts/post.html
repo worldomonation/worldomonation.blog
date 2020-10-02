@@ -5,10 +5,12 @@ archive: false
 post_class: post-template
 ---
 
+<meta charset="UTF-8">
 <div class="entry-header">
+    <br>
     <!-- Post Title -->
     <h1 class="posttitle">{{ page.title }}</h1>
-    <!-- Author & Date  Box -->
+    <!-- Author & Date Box -->
     {% assign author = site.authors[page.author] %}
     {% if page.author %}
     <div class="d-flex align-items-center mt-4">
@@ -21,22 +23,39 @@ post_class: post-template
         </div>            
         <div>
         Written by <a target="_blank" class="text-dark" href="{{ author.web }}">{{ author.display_name }}</a> on 
-        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time></span>
         {% if page.last_modified_at %}
         (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
         {% endif %}
-        </div>            
+        </div>       
     </div>
     {% endif %}
 </div>
 
-<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
-{% if site.adsense == "enabled" %}
-    {% include adsense-under-header.html %}
-{% endif %}
+<br>
 
 <!-- Featured Image -->
-{% include featured-image.html %}
+<div class="card">
+    <div class="card-img-top">
+        {% include featured-image.html %}
+    </div>
+    <div class="card-body">
+        {{ page.text }}
+    </div>
+    <div class="card-footer text-muted">
+        <!-- Build the EXIF string. -->
+        {{ page.image | exif: 'make' }} {{ page.image | exif: 'model' }} + {{ page.lens }} @ ISO {{ page.iso }}
+
+        <!-- If film is specified. -->
+        {% if page.film %}
+        <br>
+        Film: {{ page.film }}
+        {% endif %}
+
+        <br>
+        Taken: {{ page.image | exif: 'date_time' | date: "%Y-%m-%d" }}
+    </div>
+</div>
 
 <!-- Content -->
 {% include article.html %}

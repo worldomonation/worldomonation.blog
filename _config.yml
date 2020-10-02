@@ -10,6 +10,7 @@ mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 email: 'egao@outlook.com'
+encoding: UTF-8
 
 # Authors
 authors:
@@ -31,6 +32,7 @@ plugins:
   - jekyll-archives
   - jekyll-figure
   - jekyll-analytics
+  - jekyll-exif-data
 
 # Google Analytics
 jekyll_analytics:

@@ -20,4 +20,5 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
     gem 'jekyll-analytics'
+    gem 'jekyll-exif-data'
 end
