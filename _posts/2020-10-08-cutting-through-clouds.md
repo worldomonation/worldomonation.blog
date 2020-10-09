@@ -1,5 +1,5 @@
 ---
-layout: post_non_card
+layout: post
 title:  "Cutting through the clouds"
 author: Edwin
 categories: [ Photography ]
