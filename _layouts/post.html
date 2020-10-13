@@ -39,9 +39,12 @@ post_class: post-template
     <div class="card-img-top">
         {% include featured-image.html %}
     </div>
+    {% if page.text %}
     <div class="card-body">
         {{ page.text }}
     </div>
+    {% endif %}
+    {% if page.make %}
     <div class="card-footer text-muted">
         <!-- Build the EXIF string. -->
         {% if page.make %}
@@ -59,6 +62,7 @@ post_class: post-template
             Taken: {{ page.capture_date }}
         {% endif %}
     </div>
+    {% endif %}
 </div>
 
 <!-- Content -->
