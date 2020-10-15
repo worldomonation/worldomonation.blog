@@ -3,7 +3,7 @@ layout: post
 title:  "Wildfire smoke"
 author: Edwin
 categories: [ Photography ]
-tags: [ Canada, Squamish ]
+tags: [ Canada, Squamish, iPhone ]
 image: assets/images/photography/2020/2020_09_13.jpeg
 text: Thick wildfire smoke drifting into the Vancouver region mid-September.
 lens: 26mm f/1.8
