@@ -10,7 +10,7 @@ This is an interesting problem that actually took me a bit of poking around to f
 
 ## Problem
 
-Given an integer `n`, return any array containing n unique integers such that they add up to 0.
+Given an integer n, return any array containing n unique integers such that they add up to 0.
 
 Example 1:
 ```
@@ -45,7 +45,7 @@ Recall that the complement of any given integer will produce 0:
 
 This is the principle that we'll apply to the solution.
 
-For where `n` is even, the only values necesary are actually the complements themselves. Example 1 illustrates this somewhat, but it goes all fancy with a bunch of larger numbers. 
+For where n is even, the only values necesary are actually the complements themselves. Example 1 illustrates this somewhat, but it goes all fancy with a bunch of larger numbers. 
 
 A simpler example to illustrate when `n` is even:
 ```
@@ -53,7 +53,7 @@ Input: n = 2
 Output: [-1, 1]
 ```
 
-If `n` is odd however, there needs to be an extra 0 to meet the number of elements requirement. Example 3 illustrates this.
+If n is odd however, there needs to be an extra 0 to meet the number of elements requirement. Example 3 illustrates this.
 
 
 ## Solution

@@ -54,12 +54,9 @@ paginate: 6
 paginate_path: /page:num/
     
 # Other
-highlighter: rouge
 markdown: kramdown
 kramdown:
-  syntax_highlighter: rouge
-
-
+  highlighter: rouge
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
