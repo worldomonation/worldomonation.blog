@@ -6,7 +6,7 @@ categories: [ Code ]
 tags: [ Leetcode, Python ]
 ---
 
-This is an interesting problem that actually took me a bit of poking to fully grasp. Say what you will about that.
+This is an interesting problem that actually took me a bit of poking around to fully grasp how to solve. It might not be the most efficient solution, but it'
 
 ## Problem
 
@@ -60,7 +60,7 @@ If `n` is odd however, there needs to be an extra 0 to meet the number of elemen
 
 My solution in python:
 
-{% highlight javascript %}
+```python
 def sumZero(self, n: int) -> List[int]:
     values = [i for i in range(-(n // 2), (n // 2) + 1)]
 
@@ -68,4 +68,4 @@ def sumZero(self, n: int) -> List[int]:
         values.pop(n // 2)
         
     return values
-{% endhighlight %}
+```
