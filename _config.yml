@@ -57,8 +57,7 @@ paginate_path: /page:num/
 highlighter: rouge
 markdown: kramdown
 kramdown:
-   syntax_highlighter_opts:
-      disable : true
+  syntax_highlighter: rouge
 
 
 
