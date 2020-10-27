@@ -16,13 +16,13 @@ baseurl: ''
 # Authors
 authors:
   Edwin:
-    name: Edwin
+    name: Edwin Takahashi
     display_name: Edwin
-    gravatar: 
+    gravatar: e804ef0b031338d9bce9c31f062fb0ce
     email: egao@outlook.com
     web: https://edwintakahashi.com
     twitter: https://twitter.com/TakahashiEdwin
-    description: ''
+    description: 
 
 # Plugins
 plugins:
