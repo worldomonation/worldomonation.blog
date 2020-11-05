@@ -31,7 +31,7 @@ Input: n = 1
 Output: [0]
 ```
 
-## The hint
+## Hint
 
 It sounds obvious, but there is no need to go all fancy on this problem. 
 
