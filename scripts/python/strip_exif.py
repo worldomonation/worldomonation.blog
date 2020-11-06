@@ -2,7 +2,8 @@ import os
 import pathlib
 import subprocess
 
-import git
+
+from repo import repo_root
 
 
 def get_photos_dir(root):
@@ -11,15 +12,9 @@ def get_photos_dir(root):
     return photos_dir
 
 
-def _repo_root():
-    repo = git.Repo(os.path.curdir, search_parent_directories=True)
-    return repo.git.rev_parse("--show-toplevel")
-
-
 if __name__ == '__main__':
-    root = pathlib.Path(_repo_root())
+    root = pathlib.Path(repo_root())
     photos = str(get_photos_dir(root))
 
     # Strip all EXIF data
     subprocess.run(['exiftool', '-r', '-overwrite_original', '-all=', photos])
-
