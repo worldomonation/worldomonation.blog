@@ -21,5 +21,5 @@ if __name__ == '__main__':
     photos = str(get_photos_dir(root))
 
     # Strip all EXIF data
-    subprocess.run(['exiftool', '-r', 'overwrite_original', '-all=', photos])
+    subprocess.run(['exiftool', '-r', '-overwrite_original', '-all=', photos])
 
