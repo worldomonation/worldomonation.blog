@@ -57,6 +57,7 @@
   @include font-size($navbar-brand-font-size);
   line-height: inherit;
   white-space: nowrap;
+  color: darken($dark, 24%);
 
   @include hover-focus() {
     text-decoration: none;
