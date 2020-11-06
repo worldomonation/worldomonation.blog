@@ -1,3 +1,4 @@
+# Jekyll/Ruby
 _site
 .DS_Store
 Gemfile.lock
@@ -6,3 +7,10 @@ Gemfile.lock
 *~
 .jekyll-cache
 .jekyll-metadata
+
+
+# Python
+*.pyc
+
+# Visual Studio Code
+.vscode
