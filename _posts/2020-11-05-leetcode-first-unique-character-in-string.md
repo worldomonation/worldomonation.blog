@@ -31,7 +31,6 @@ Example 2:
 This is a prime example of a problem that can be solved in O(n) by iterating over the string, but even faster by using a hash table.
 
 
-
 ## Solution 
 
 My solution in python3:
@@ -75,9 +74,13 @@ Test cases:
 
 # Analysis
 
-This solution is an example of trading space complexity for runtime. 
+This solution is an example of trading space complexity for runtime gains.
 
-It is not the most efficient; `s.index(key)` call takes `O(n)` time to run. However, since we're doing it only once, the tradeoffs are acceptable in this case. In fact, this solution beats the Leetcode suggested solution in terms of runtime complexity:
+By creating a new dict that may contain up to `n` keys, we trade increased memory footprint for the `O(1)` lookup speed. 
+
+There can be further optimizations made eg. `s.index(key)` call typically takes `O(n)` time to run. However, since we're doing it only once, the tradeoffs are acceptable in this case. 
+
+In fact, this solution beats the Leetcode suggested solution (which also uses a hash table):
 
 `Runtime: 52 ms, faster than 98.21% of Python3 online submissions for First Unique Character in a String.`
 
