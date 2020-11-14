@@ -27,8 +27,6 @@ def find_post(posts_dir, post_name):
 
 
 def insert_exif(contents, image_path):
-    image_path = pathlib.Path(
-        '/Users/edwintakahashi/Downloads/0F3D73CB-DCB8-4404-843C-142570B44358.jpeg')
     with exiftool.ExifTool() as et:
         metadata = et.get_metadata(str(image_path))
 
