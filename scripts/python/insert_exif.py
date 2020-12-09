@@ -38,7 +38,11 @@ def insert_exif(contents, image_path):
         ('capture_date', 'IPTC:DateCreated'),
     ]
     for post_tag, metadata_tag in tags:
-        data = metadata[metadata_tag]
+        try:
+            data = metadata[metadata_tag]
+        except KeyError:
+            print(f"Key {post_tag} was not found.")
+            continue
 
         if 'capture_date' in post_tag:
             data = data.replace(':', '-')
