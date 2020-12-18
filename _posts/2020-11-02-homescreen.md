@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Homescreen 2020/11/02"
+title:  "Homescreen 2020-11-02"
 author: Edwin
 categories: [ Technology ]
 tags: [ Home Screen ]
