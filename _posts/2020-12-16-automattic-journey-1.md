@@ -51,7 +51,7 @@ The interview itself started on the dot as agreed. The hiring manager was engagi
 
 As promised by the hiring manager, I heard back in almost exactly 24 hours with the good news - I had passed the manager interview and was recommended to start the famous Trial.
 
-Quick recap for those unfamiliar; the final step in Automattic's hiring process involves a trial of up to 40 hours in duration, paid at a set rate for everyone - USD$25/hour. Some are critical of this process because of the huge commitment it demands or what they perceive as 'getting cheap work' out of candidates. I cannot change anyone's minds, but I will say that my trial project was an excellent primer for what I could expect to be performing day to day in the Senior Quality Engineer role.
+Quick recap for those unfamiliar; the final step in Automattic's hiring process involves a trial of up to 40 hours in duration, paid at a set rate for everyone - USD$25/hour. Some are critical of this process because of the huge commitment it demands or what they perceive as 'getting cheap work' out of candidates. I disagree with such assessments and although I cannot change anyone's minds, my trial project was an excellent primer for what I could expect to be performing day to day in the Senior Quality Engineer role. 
 
 Work with the recruiter to set a start date for the trial and once started, you are expected to complete the trial within a maximum of 40 hours or 6 weeks, whichever comes first.
 
