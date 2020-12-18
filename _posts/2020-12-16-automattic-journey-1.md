@@ -64,6 +64,8 @@ I received a Slack message that I had been recommended for hire to the CEO, Matt
 
 The paperwork and negotiations follow and the excellent HR team made it painless. The only thing left to do is to set a start date, and join the adventure.
 
+As I write this, I am less than two weeks from my first day. Exciting times ahead!
+
 ----
 
 I hope this post has been helpful for someone out there that is considering giving Automattic a shot, or want to learn more about the process. It is definitely unique and challenging, but once successful you are part of an exclusive group of people that powers [over 30%](https://torquemag.io/2018/03/wordpress-powers-30-percent-internet/) of the sites in the world.
