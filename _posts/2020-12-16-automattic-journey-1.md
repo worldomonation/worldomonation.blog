@@ -28,7 +28,7 @@ Many years and positions later I was at Mozilla working on Firefox - until I was
 ## Application
 ##### _2020-10-26_
 
-On 2020-10-26 at 21:05 PDT, I sent in my application for a Senior Quality Engineer position I saw open on Automattic's career page. Little did I know this would be the first act in a fun and exciting journey.
+On 2020-10-26 late at night, I sent in my application for a Senior Quality Engineer position I saw open on Automattic's career page. Little did I know this would be the first act in a fun and exciting journey.
 
 ## Technical Screen
 ##### _2020-10-29_
@@ -53,16 +53,14 @@ As promised by the hiring manager, I heard back in almost exactly 24 hours with 
 
 Quick recap for those unfamiliar; the final step in Automattic's hiring process involves a trial of up to 40 hours in duration, paid at a set rate for everyone - USD$25/hour. Some are critical of this process because of the huge commitment it demands or what they perceive as 'getting cheap work' out of candidates. I disagree with such assessments and although I cannot change anyone's minds, my trial project was an excellent primer for what I could expect to be performing day to day in the Senior Quality Engineer role. 
 
-Work with the recruiter to set a start date for the trial and once started, you are expected to complete the trial within a maximum of 40 hours or 6 weeks, whichever comes first.
-
-I spent 36 hours on the trial, split over three weeks. I would consider this to be a moderate pace, but a good one for the life situation I had at that time. Some take 2 weeks or less, others take up to 6 weeks to complete. Find a good balance that continues to motivate you.
+I spent 36 hours on the trial, split over three weeks. I would consider this to be a moderate pace, but a good one for the life situation I had at that time. Some take 2 weeks or less, others take up to 6 weeks to complete. If you go through this, find a good balance that continues to motivate you.
 
 ## Offer
 ##### _2020-12-08_
 
-I received a Slack message that I had been recommended for hire to the CEO, Matt Mullenweg on the morning, and it was the single best thing I had heard in the few months preceding it. In the current state of the world, filled with dark and depressing news this was a dream come true. I had made it to Automattic, a company I aspired to in my early career days.
+I received a Slack message that I had been recommended for hire to the CEO Matt Mullenweg in the morning, and it was the single best thing I had heard in the few months preceding it. In the current state of the world, filled with dark and depressing news this was a dream come true. I had made it to Automattic, a company I aspired to in my early career days.
 
-The paperwork and negotiations follow and the excellent HR team made it painless. The only thing left to do is to set a start date, and join the adventure.
+The paperwork and negotiations follow and the excellent HR team made it painless. The only thing left to do was to set a start date and join the adventure.
 
 As I write this, I am less than two weeks from my first day. Exciting times ahead!
 
