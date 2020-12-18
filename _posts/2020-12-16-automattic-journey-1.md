@@ -22,6 +22,44 @@ A year or two after graduating university and while working at the first positio
 Until I was [laid off](https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/) from Mozilla in August 2020 in the immediate aftermath of COVID-19. It was daunting enough to be unemployed, but on top of a once-in-a-lifetime pandemic, it was a real struggle every day.
 
 ## Application
+##### _2020-10-26_
 
 On 2020-10-26 at 21:05 PDT, I sent in my application for a Senior Quality Engineer position I saw open on Automattic's career page. Little did I know this would be the first act in a fun and exciting journey.
 
+## Technical Screen
+##### _2020-10-29_
+
+I received a response quickly from a recruiter with details on various tasks that I was expected to complete. To be frank, I did not expect to hear back so soon as much has been written about Automattic's recruiting process online, and most had waited weeks or months before hearing back. Plus, I was expecting a text interview with the hiring manager over Slack as the first step, but I suppose COVID-19 has changed the procedure somewhat.
+
+Anyhow, over that weekened I hunkered down to complete the take-home assignments. My hands were sweaty as I submitted the PDF which contained my responses to the questions and links to the assignment.
+
+## Slack Interview
+##### _2020-11-09_
+
+The invitation for the interview with the hiring manager came within two days of my submission. The interview is text-only over Slack - something many have written about.
+
+Personally, I liked it. I am awkward over telephone and sometimes do not articulate thoughts well. Over text, I have the time to think about the way I answer a question. This method of hiring is definitely an advantage for those that have spent many hours on text-based online communities. 
+
+The interview itself started on the dot as agreed. The hiring manager was engaging, outlined the process and expectations of the interview and we set out having an informative discussion over the next 1.5 hours. We actually went over time by 15 minutes as we discussed off-topics like BBQ techniques.
+
+## Trial
+##### _2020-11-19_
+
+As promised by the hiring manager, I heard back in almost exactly 24 hours with the good news - I had passed the manager interview and was recommended to start the famous Trial.
+
+Quick recap for those unfamiliar; the final step in Automattic's hiring process involves a trial of up to 40 hours in duration, paid at a set rate for everyone - USD$25/hour. Some are critical of this process because of the huge commitment it demands or what they perceive as 'getting cheap work' out of candidates. I cannot change anyone's minds, but I will say that my trial project was an excellent primer for what I could expect to be performing day to day in the Senior Quality Engineer role.
+
+Work with the recruiter to set a start date for the trial and once started, you are expected to complete the trial within a maximum of 40 hours or 6 weeks, whichever comes first.
+
+I spent 36 hours on the trial, split over three weeks. I would consider this to be a moderate pace, but a good one for the life situation I had at that time. Some take 2 weeks or less, others take up to 6 weeks to complete. Find a good balance that continues to motivate you.
+
+## Offer
+##### _2020-12-08_
+
+I received a Slack message that I had been recommended for hire to the CEO, Matt Mullenweg on the morning, and it was the single best thing I had heard in the few months preceding it. In the current state of the world, filled with dark and depressing news this was a dream come true. I had made it to Automattic, a company I aspired to in my early career days.
+
+The paperwork and negotiations follow and the excellent HR team made it painless. The only thing left to do is to set a start date, and join the adventure.
+
+----
+
+I hope this post has been helpful for someone out there that is considering giving Automattic a shot, or want to learn more about the process. It is definitely unique and challenging, but once successful you are part of an exclusive group of people that powers [over 30%](https://torquemag.io/2018/03/wordpress-powers-30-percent-internet/) of the sites in the world.
