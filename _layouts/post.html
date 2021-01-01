@@ -36,9 +36,15 @@ post_class: post-template
 <!-- Featured Image -->
 <meta name=”twitter:image” content="{{ site.baseurl }}/{{ page.image }}">
 <div class="card">
-    <div class="card-img-top">
-        {% include featured-image.html %}
-    </div>
+    {% if page.card-thumb == true %}
+        <!-- nothing -->
+    {% else %}
+        <div class="card-img-top">
+            {% include featured-image.html %}
+        </div>
+    {% endif %}
+    
+
     {% if page.text %}
     <div class="card-body">
         {{ page.text }}

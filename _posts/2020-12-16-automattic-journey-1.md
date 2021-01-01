@@ -5,6 +5,7 @@ author: Edwin
 categories: [ Story ]
 tags: [ Work ]
 image: assets/images/article/2020-12-16/a8c_wordpress_com.png
+card-thumb: true
 ---
 
 ![image](/assets/images/article/2020-12-16/a8c_logo_color_cmyk.png)
@@ -33,7 +34,11 @@ On 2020-10-26 late at night, I sent in my application for a Senior Quality Engin
 ## Technical Screen
 ##### _2020-10-29_
 
-I received a response quickly from a recruiter with details on various tasks that I was expected to complete. To be frank, I did not expect to hear back so soon as much has been written about Automattic's recruiting process online, and most had waited weeks or months before hearing back. Plus, I was expecting a text interview with the hiring manager over Slack as the first step, but I suppose COVID-19 has changed the procedure somewhat.
+I received a response quickly from a recruiter with details on various tasks that I was expected to complete. To be frank, I did not expect to hear back so soon as much has been written about Automattic's recruiting process online and indeed most others had waited weeks or months before hearing back. 
+
+On top of that, I was expecting the text interview with hiring manager as the first step, but I suppose COVID-19 has led to the procedure being shuffled around a bit. 
+
+You will be added to a private channel with a HR Wrangler as a guest. Some details about the Automattic way of life will be shared - carefully read through them. Most importantly, understand that Automattic works like no other, exemplified with the [Automattic Creed](https://automattic.com/creed/).
 
 Anyhow, over that weekened I hunkered down to complete the take-home assignments. My hands were sweaty as I submitted the PDF which contained my responses to the questions and links to the assignment.
 
