@@ -5,6 +5,7 @@ author: Edwin
 categories: [ Story ]
 tags: [ Work ]
 image: assets/images/article/2020-12-16/a8c_wordpress_com.png
+card-thumb: true
 ---
 
 ![image](/assets/images/article/2020-12-16/a8c_logo_color_cmyk.png)
