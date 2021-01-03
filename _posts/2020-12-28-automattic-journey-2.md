@@ -37,7 +37,7 @@ The first week is a firehose of information. The Support Rotation kicks in full 
 
 On top of that, it has been many years since I directly interacted with customers through support, and it is truly an eye-opener to not only how many different requests come through, but also just how difficult the Happiness Engineer's jobs are. 
 
-In between digesting the torrent of new information, I made sure to order my new hardware - a M1 MacBook Pro 13", fully decked out with 1TB SSD and 16GB RAM. I'm excited to be one of the early adopters of Apple's next big thing. If only [Best Buy would stop cancelling](https://twitter.com/TakahashiEdwin/status/1344538170013097985) my order for a Lenovo ThinkVision P32u-10 because of some unknown reason, that would be great.
+In between digesting the torrent of new information, I made sure to order my new hardware - a M1 MacBook Pro 13", fully decked out with 1TB SSD and 16GB RAM. I'm excited to be one of the early adopters of Apple's next big thing. If only [Best Buy would stop cancelling](https://twitter.com/TakahashiEdwin/status/1344538170013097985) my order for a Lenovo ThinkVision P32u-10 because of some unknown reason, that would be great. _EDIT_: looks like my second order with them has also been cancelled without explanation. They really do not want my business it seems.
 
 ## Looking back
 
