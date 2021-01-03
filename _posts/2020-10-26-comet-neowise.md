@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title:  "Comet NEOWISE"
 author: Edwin
 categories: [ Photography ]

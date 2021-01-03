@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title: "Leica M4 + Canon Lens 1:1.5"
 author: Edwin
 categories: [ Gear ]
