@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title: "Cloud break"
 author: Edwin
 categories: [ Photography ]

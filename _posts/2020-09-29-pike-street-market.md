@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title:  "Pike Street Market"
 author: Edwin
 categories: [ Photography ]

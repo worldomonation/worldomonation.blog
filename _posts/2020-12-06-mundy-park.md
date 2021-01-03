@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title: Mundy Park
 author: Edwin
 categories: [ Photography ]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title:  "Wildfire smoke"
 author: Edwin
 categories: [ Photography ]
