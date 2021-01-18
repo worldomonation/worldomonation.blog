@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Set a local page as Firefox start page"
+title: "Setting a local HTML file (with JavaScript) as Firefox new tab page"
 author: Edwin
 categories: [ ]
 tags: [ ]
