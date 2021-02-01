@@ -29,17 +29,23 @@ This should work with Firefox 86. All steps were run on macOS Catalina 10.15, bu
 
 Give them a try and enjoy rich, JavaScript-enabled new tab page!
 
-#### (macOS only) Remove quarantine from the application.
+## Step 0. (macOS only) remove application quarantine
 
 `xattr -r -d com.apple.quarantine Firefox.app`
 
-#### navigate to the working directory.
+## Step 1. navigate to the working directory:
+
+In my case, since I run Firefox Nightly, the directory will be:
 
 `/Applications/Firefox Nightly.app/Contents/Resources`
 
-#### create a new file called `autoconfig.cfg` in this directory and paste in the following.
+Replace `Firefox Nightly.app` with your install of Firefox.
 
-```
+## Step 2. create `autoconfig.cfg`
+
+Paste in the follwing:
+
+```javascript
 // First line must be a comment
 var {classes:Cc,interfaces:Ci,utils:Cu} = Components;
 
@@ -51,12 +57,25 @@ try {
 } catch(e){Cu.reportError(e);}
 ```
 
-#### create a new file at `/Applications/Firefox Nightly.app/Contents/Resources/defaults/pref/autoconfig.js` and paste in the following.
+Replace the path at line 6 to the HTML file on your disk.
+
+
+## Step 3. navigate to another directory
 
 ```
+cd defaults/pref`
+```
+
+## Step 4. create `autoconfig.js`
+
+Again, paste in the following:
+
+```javascript
 // First line must be a comment.
 pref("general.config.filename", "autoconfig.cfg");
 pref("general.config.obscure_value", 0);
 ```
 
-#### reload Firefox and open a new tab.
+## Step 5. reload Firefox and open a new tab
+
+Firefox should now load the HTML file specified in `autoconfig.cfg`!
