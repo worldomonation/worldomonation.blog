@@ -31,13 +31,17 @@ Give them a try and enjoy rich, JavaScript-enabled new tab page!
 
 ## Step 0. (macOS only) remove application quarantine
 
-`xattr -r -d com.apple.quarantine Firefox.app`
+```shell
+xattr -r -d com.apple.quarantine Firefox.app
+```
 
 ## Step 1. navigate to the working directory:
 
 In my case, since I run Firefox Nightly, the directory will be:
 
-`/Applications/Firefox Nightly.app/Contents/Resources`
+```shell
+cd /Applications/Firefox Nightly.app/Contents/Resources
+```
 
 Replace `Firefox Nightly.app` with your install of Firefox.
 
@@ -62,8 +66,8 @@ Replace the path at line 6 to the HTML file on your disk.
 
 ## Step 3. navigate to another directory
 
-```
-cd defaults/pref`
+```shell
+cd defaults/pref
 ```
 
 ## Step 4. create `autoconfig.js`
