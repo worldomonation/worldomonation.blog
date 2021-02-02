@@ -7,7 +7,8 @@ tags: [ ]
 image: assets/images/article/2021-01-17/new-tab-startpage.png
 ---
 
-I recently explored creating a custom local startpage like I did in 2006.
+<br>
+I recently explored creating a custom local startpage like I had done once upon a time in 2006.
 
 Back then, it was a simple process:
 
@@ -19,7 +20,7 @@ But in 2020, things are different.
 
 Because of security restrictions the major browsers available today no longer permit the loading of local files for a new tab. Extensions such as [New Tab Override](https://addons.mozilla.org/ja/firefox/addon/new-tab-override/) exist but they do not load JavaScript which limits the usefulness of such pages.
 
-One solution to this problem is hosting your startpage locally or on a remote server, but this seems overkill and was a bridge I was not willing to cross to make this work.
+One solution to this problem is hosting your startpage locally or on a remote server, but this seemed like overkill and was a bridge I was not willing to cross to make this work.
 
 It is also quite frustrating searching for a workaround. Because this was a feature that was supported for a long time, the web is littered with outdated articles, many close to a decade old, detailing steps that no longer apply.
 
@@ -31,13 +32,17 @@ Give them a try and enjoy rich, JavaScript-enabled new tab page!
 
 ## Step 0. (macOS only) remove application quarantine
 
-`xattr -r -d com.apple.quarantine Firefox.app`
+```shell
+xattr -r -d com.apple.quarantine Firefox.app
+```
 
 ## Step 1. navigate to the working directory:
 
 In my case, since I run Firefox Nightly, the directory will be:
 
-`/Applications/Firefox Nightly.app/Contents/Resources`
+```shell
+cd /Applications/Firefox Nightly.app/Contents/Resources
+```
 
 Replace `Firefox Nightly.app` with your install of Firefox.
 
@@ -62,8 +67,8 @@ Replace the path at line 6 to the HTML file on your disk.
 
 ## Step 3. navigate to another directory
 
-```
-cd defaults/pref`
+```shell
+cd defaults/pref
 ```
 
 ## Step 4. create `autoconfig.js`
