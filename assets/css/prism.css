@@ -33,7 +33,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+bash+diff+gi
  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
  code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	 text-shadow: none;
-	 background: #b3d4fc;
+	 background: #ffff;
  }
  
  pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
