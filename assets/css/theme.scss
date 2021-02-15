@@ -40,39 +40,6 @@ h1,h2,h3,h4,h5,h6 {
 .site-content {
     padding-top:50px;
 }
-
-// Landing page stuff
-.landing > .content {
-    text-align: center;
-    width: 500px;
-}
-
-.header > img:nth-child(1) {
-    border-radius: 5%;
-    width:70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container > div > div > div.links > ul {
-    padding: 0;
-    list-style-type: none;
-
-    li > a:hover {
-        color: red;
-    }
-    a {
-        color: black;
-    }
-}
-
-.padding {
-    padding-top: 5em;
-    padding-bottom: 3em;
-}
-
-// Default Theme
 .sitetag {
     font-weight:700;    
     line-height:1.3;
