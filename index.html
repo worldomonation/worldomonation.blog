@@ -1,20 +1,26 @@
 ---
-layout: default
-title: Home
+layout: landing
+title: 
 ---
 
-<!-- Posts Index
-================================================== -->
-<div class="blog-grid-container">
-    {% for post in paginator.posts %}
-        {% include postbox.html %}
-    {% endfor %}
+<div class="header">
+    <img class="responsive" src="{{ site.baseurl }}/assets/images/site/landing.jpeg">
 </div>
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
+<div class="padding">
+
+</div>
+
+<div class="links">
+    <ul style="list-style-type:none;">
+        <li>
+            <a href=https://blog.edwintakahashi.com>Blog</a>
+        </li>
+        <li>
+            <a href=https://github.com/worldomonation>GitHub</a>
+        </li>
+        <li>
+            <a href=https://twitter.com/TakahashiEdwin>Twitter</a>
+        </li>
+    </ul>
 </div>
