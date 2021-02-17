@@ -586,6 +586,10 @@ body.active-side {
     // border-top:1px solid $gray-200;
     font-size:15px;
     background:#dbdbdb;
+
+    a {
+        color: $black;
+    }
 }
 
 //responsive tweaks
