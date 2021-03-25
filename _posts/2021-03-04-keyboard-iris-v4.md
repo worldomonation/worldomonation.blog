@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title: Keebio Iris v4
 author: Edwin
 categories: [Technology]

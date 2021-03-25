@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Migrating Selenium tests to Playwright
+title: Migrating from Selenium to Playwright
 author: Edwin
 categories: [Technology]
 tag: [Code, Quality Assurance]
+image: assets/images/technology/2021-03-24-playwright.png
+card-thumb: true
 ---
 
 If you spent any time in the quality engineering space, you would have heard or interacted with Selenium at some point. It has been around for a long time after all - in some form or another since [2004](https://www.selenium.dev/history/), an eternity in software engineering.

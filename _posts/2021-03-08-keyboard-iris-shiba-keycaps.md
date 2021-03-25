@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title: Keebio Iris v4 + XDA Shiba Inu keycaps
 author: Edwin
 categories: [Technology]

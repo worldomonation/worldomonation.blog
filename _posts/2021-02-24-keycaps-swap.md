@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: image_post
 title: HK Gaming Chalk Keycaps
 author: Edwin
 categories: [Technology]
