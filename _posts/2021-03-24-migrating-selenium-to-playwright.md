@@ -26,13 +26,15 @@ The framework that was often mentioned in same sentence as 'don't use Selenium, 
 
 It's fast, it's modern, and it is tightly knit with Google Chrome. Great!
 
-And that's where its pitfall lies. It only supports Google Chrome. There are still millions of users out on the Web whose browser of choice is not Google Chrome or one of its clone-stamped variants. Some of us value privacy + control and use Firefox. Others value speed + tight integration and use Safari. Puppeteer leaves all of us in the dust to fend for ourselves.
+And that's where its pitfall lies. It only supports Google Chrome. There are still millions of users out on the Web whose browser of choice is not Google Chrome or one of its clone-stamped variants. 
+
+Some of us value privacy + control and use Firefox. Others value speed + tight integration and use Safari. Puppeteer leaves all of us in the dust to fend for ourselves.
 
 In short, Puppeteer is everything that's wrong with the Web today: Google dominance.
 
 ### Playwright is the way
 
-I am not sure what prompted the engineering team that developed Puppeteer to suddenly move _en masse_ to Microsoft, but the quality engineering space and by extension the Web is a better place for the team's actions.
+I am not sure what prompted the engineering team that developed Puppeteer to suddenly move _en masse_ to Microsoft, but the quality engineering space and by extension the Web is in a better position thanks to the team's actions.
 
 Playwright natively supports all three major browser engines still available today<sup>[1]</sup>. This alone should be enough for everyone to make plans to switch. Show Google that monopolistic behavior is not acceptable.
 
@@ -87,11 +89,13 @@ I would bet the median difference would be greater than 2x if the tests were run
 
 The difficult part is not necessarily with rewriting the end-to-end tests. That is actually quite easy, and takes a skilled engineer only several days to translate a sizable numner of scenarios.
 
-No, what makes transition of any sorts difficult are the supporting libraries.
+No, what makes transition of any sorts difficult are the supporting libraries, tools and having to reconfigure everything.
 
-In the case of Automattic/wp-calypso, there are hundreds of files that forms the scaffolding within which end-to-end tests run. 
+In the case of Automattic/wp-calypso, there are hundreds of files that forms the scaffolding within which end-to-end tests run. All of these need some attention, and most will require reworking to fit the Playwright paradigm.
 
 To migrate all those files while keeping Selenium tests running concurrently - that is the challenge, and given the magnitude of it, understandable that many organizations choose to continue patching their Selenium suite.
+
+But remember - no pain, no gain.
 
 ### Is it worth it?
 
