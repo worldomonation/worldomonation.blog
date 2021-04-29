@@ -131,11 +131,11 @@ def main():
         print('Unexpected number of delimiters in post.')
         raise SystemExit
 
-    # if contents:
-    #     write_post_contents(post, contents)
-    # else:
-    #     print('Unexpected end of post.')
-    #     raise SystemExit
+    if contents:
+        write_post_contents(post, contents)
+    else:
+        print('Unexpected end of post.')
+        raise SystemExit
 
 if __name__ == '__main__':
     main()
