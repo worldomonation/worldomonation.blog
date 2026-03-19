@@ -1,0 +1,19 @@
+# Jekyll/Ruby
+_site
+.DS_Store
+Gemfile.lock
+*.swp
+.sass-cache
+*~
+.jekyll-cache
+.jekyll-metadata
+
+
+# Python
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# Node
+node_modules

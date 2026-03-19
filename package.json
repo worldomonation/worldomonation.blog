@@ -1,0 +1,14 @@
+{
+  "name": "worldomonation-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "exifr": "^7.0.0"
+  }
+}
