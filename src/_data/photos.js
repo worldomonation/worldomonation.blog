@@ -1,25 +1,37 @@
 import { readdir, stat } from "node:fs/promises";
-import { join, extname, basename } from "node:path";
+import { join, extname, basename, relative } from "node:path";
 import exifr from "exifr";
 
 const PHOTOS_DIR = "src/photos";
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".tiff"]);
 
+async function findImages(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const results = [];
+  for (const entry of entries) {
+    if (entry.name.startsWith(".")) continue;
+    const fullPath = join(dir, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...(await findImages(fullPath)));
+    } else if (IMAGE_EXTENSIONS.has(extname(entry.name).toLowerCase())) {
+      results.push(fullPath);
+    }
+  }
+  return results;
+}
+
 export default async function () {
-  let files;
+  let imagePaths;
   try {
-    files = await readdir(PHOTOS_DIR);
+    imagePaths = await findImages(PHOTOS_DIR);
   } catch {
     return [];
   }
 
-  const imageFiles = files.filter(
-    (f) => !f.startsWith(".") && IMAGE_EXTENSIONS.has(extname(f).toLowerCase())
-  );
-
   const photos = await Promise.all(
-    imageFiles.map(async (filename) => {
-      const filepath = join(PHOTOS_DIR, filename);
+    imagePaths.map(async (filepath) => {
+      const relativePath = relative(PHOTOS_DIR, filepath);
+      const filename = basename(filepath);
       const fileStat = await stat(filepath);
 
       let exif = {};
@@ -53,7 +65,7 @@ export default async function () {
 
       return {
         filename,
-        src: `/photos/${filename}`,
+        src: `/photos/${relativePath}`,
         alt:
           exif.title ||
           exif.caption ||
