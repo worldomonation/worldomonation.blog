@@ -61,7 +61,7 @@ export default async function () {
         // No EXIF data — image still appears in gallery
       }
 
-      const date = exif.date || fileStat.mtime;
+      const date = exif.date || parseDateFromFilename(filename) || fileStat.mtime;
 
       return {
         filename,
@@ -88,6 +88,14 @@ function formatCamera(make, model) {
   if (!model) return make;
   if (model.toLowerCase().startsWith(make.toLowerCase())) return model;
   return `${make} ${model}`;
+}
+
+function parseDateFromFilename(filename) {
+  const match = basename(filename, extname(filename)).match(
+    /^(\d{4})-(\d{2})-(\d{2})/
+  );
+  if (!match) return null;
+  return new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00`);
 }
 
 function formatShutterSpeed(exposureTime) {
