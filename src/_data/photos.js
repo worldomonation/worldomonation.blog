@@ -61,7 +61,8 @@ export default async function () {
         // No EXIF data — image still appears in gallery
       }
 
-      const date = exif.date || parseDateFromFilename(filename) || fileStat.mtime;
+      const displayDate =
+        exif.date || parseDateFromFilename(filename) || fileStat.mtime;
 
       return {
         filename,
@@ -70,14 +71,14 @@ export default async function () {
           exif.title ||
           exif.caption ||
           basename(filename, extname(filename)).replace(/[_-]/g, " "),
-        date,
-        dateFormatted: formatDate(date),
+        date: displayDate,
+        dateFormatted: formatDate(displayDate),
         exif,
       };
     })
   );
 
-  photos.sort((a, b) => new Date(b.date) - new Date(a.date));
+  photos.sort((a, b) => (b.filename > a.filename ? 1 : b.filename < a.filename ? -1 : 0));
 
   return photos;
 }
