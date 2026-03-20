@@ -1,6 +1,27 @@
 import { readdir, stat } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { join, extname, basename, relative } from "node:path";
 import exifr from "exifr";
+
+const execFileAsync = promisify(execFile);
+
+async function getGitCommitDate(filepath) {
+  try {
+    const { stdout } = await execFileAsync("git", [
+      "log",
+      "--format=%ai",
+      "--diff-filter=A",
+      "--",
+      filepath,
+    ]);
+    const dateStr = stdout.trim().split("\n")[0];
+    if (dateStr) return new Date(dateStr);
+  } catch {
+    // git not available or file not tracked — fall back to other date sources
+  }
+  return null;
+}
 
 const PHOTOS_DIR = "src/photos";
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".tiff"]);
@@ -61,7 +82,14 @@ export default async function () {
         // No EXIF data — image still appears in gallery
       }
 
-      const date = exif.date || parseDateFromFilename(filename) || fileStat.mtime;
+      const displayDate =
+        exif.date || parseDateFromFilename(filename) || fileStat.mtime;
+      // uploadDate drives sort order and uses git commit date (= when the photo
+      // was added to the repo) rather than EXIF date (= when the photo was taken).
+      const uploadDate =
+        (await getGitCommitDate(filepath)) ||
+        parseDateFromFilename(filename) ||
+        fileStat.mtime;
 
       return {
         filename,
@@ -70,14 +98,15 @@ export default async function () {
           exif.title ||
           exif.caption ||
           basename(filename, extname(filename)).replace(/[_-]/g, " "),
-        date,
-        dateFormatted: formatDate(date),
+        date: displayDate,
+        dateFormatted: formatDate(displayDate),
         exif,
+        uploadDate,
       };
     })
   );
 
-  photos.sort((a, b) => new Date(b.date) - new Date(a.date));
+  photos.sort((a, b) => new Date(b.uploadDate) - new Date(a.uploadDate));
 
   return photos;
 }
