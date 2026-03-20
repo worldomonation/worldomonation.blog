@@ -81,6 +81,7 @@
     var photo = photos[currentIndex];
     if (!photo) return;
 
+    image.src = "";
     image.src = photo.src;
     image.alt = photo.alt;
 
