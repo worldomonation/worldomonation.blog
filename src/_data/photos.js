@@ -47,7 +47,7 @@ export default async function () {
           exif = {
             camera: formatCamera(data.Make, data.Model),
             lens: data.LensModel || data.Lens || "",
-            focalLength: data.FocalLength ? `${data.FocalLength}mm` : "",
+            focalLength: data.FocalLength ? `${Math.floor(data.FocalLength)}mm` : "",
             aperture: data.FNumber ? `f/${data.FNumber}` : "",
             shutterSpeed: formatShutterSpeed(data.ExposureTime),
             iso: data.ISO || "",
