@@ -1,8 +1,13 @@
 import { readdir, stat } from "node:fs/promises";
 import { join, extname, basename, relative } from "node:path";
 import exifr from "exifr";
+import Image from "@11ty/eleventy-img";
 
 const PHOTOS_DIR = "src/photos";
+const THUMB_OUTPUT_DIR = "_site/photos/thumbs";
+const THUMB_URL_PREFIX = "/photos/thumbs";
+const FULL_OUTPUT_DIR = "_site/photos/full";
+const FULL_URL_PREFIX = "/photos/full";
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".tiff"]);
 
 async function findImages(dir) {
@@ -64,9 +69,38 @@ export default async function () {
       const displayDate =
         exif.date || parseDateFromFilename(filename) || fileStat.mtime;
 
+      let thumbSrc = `/photos/${relativePath}`;
+      let fullSrc = `/photos/${relativePath}`;
+      try {
+        const imgName = basename(filename, extname(filename));
+        const [thumbStats, fullStats] = await Promise.all([
+          Image(filepath, {
+            widths: [600],
+            formats: ["jpeg"],
+            outputDir: THUMB_OUTPUT_DIR,
+            urlPath: THUMB_URL_PREFIX,
+            filenameFormat: (_id, _src, width, format) =>
+              `${imgName}-${width}.${format}`,
+          }),
+          Image(filepath, {
+            widths: [2100],
+            formats: ["jpeg"],
+            outputDir: FULL_OUTPUT_DIR,
+            urlPath: FULL_URL_PREFIX,
+            filenameFormat: (_id, _src, width, format) =>
+              `${imgName}-${width}.${format}`,
+          }),
+        ]);
+        thumbSrc = thumbStats.jpeg[0].url;
+        fullSrc = fullStats.jpeg[0].url;
+      } catch {
+        // Fallback to original image if generation fails
+      }
+
       return {
         filename,
-        src: `/photos/${relativePath}`,
+        src: fullSrc,
+        thumbSrc,
         alt:
           exif.title ||
           exif.caption ||
